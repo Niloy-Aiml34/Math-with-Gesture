@@ -16,7 +16,7 @@ with col2:
     op_text_area = st.subheader("")
 # Initialize the webcam to capture video
     # The '2' indicates the third camera connected to your computer; '0' would usually refer to the built-in camera
-genai.configure(api_key="AIzaSyAZHSiYkHnrNNtHVEZoEQWyDqG526adaGc")
+genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 cap = cv2.VideoCapture(0)
 cap.set(3,1280)
